@@ -1,0 +1,1 @@
+Sep 23 16:42:10.614 VM: trying to shutdown an inactive VM.
