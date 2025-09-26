@@ -1,12 +1,12 @@
 #!/bin/bash
-
+sudo systemctl daemon-reload
 #service
-SERVICE=("prometheus" "node_exporter" "snmp-exporter" "grafana-server")
+SERVICE=("prometheus" "node_exporter" "snmp-exporter" "grafana-server" "alertmanager")
 
 for SERVICES in "${SERVICE[@]}"; do
 if sudo systemctl restart $SERVICES; then
-echo "(INFO) service "$SERVICE" started"
+echo "(INFO) service "$SERVICES" started"
 else
-echo "(ERR) service "$SERVICE" failed start"
+echo "(ERR) service "$SERVICES" failed start"
 fi
 done

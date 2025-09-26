@@ -6,7 +6,7 @@ GREEN="\033[32m"
 YELLOW="\033[33m"
 RESET="\033[0m"
 
-SERVICE=("prometheus" "node_exporter" "dbus" "grafana-server" "snmp-exporter")
+SERVICE=("prometheus" "node_exporter" "dbus" "grafana-server" "snmp-exporter" "alertmanager")
 
 for SERVICE in "${SERVICE[@]}"; do
 

@@ -22,3 +22,11 @@ echo -e "${GREEN} (INFO) success copy snmp systemd ${RESET}"
 else
 echo -e "${RED} (ERR)failed copy snmp systemd ${RESET}"
 fi
+
+#alertmanager
+if sudo cp "$FOLDER/systemd/alertmanager.service" /etc/systemd/system/alertmanager.service; then
+echo -e "${GREEN} (INFO) success copy alertmanager systemd ${RESET}"
+else
+echo -e "${RED} (ERR)failed copy alertmanager systemd ${RESET}"
+fi
+

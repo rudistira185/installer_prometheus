@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SERVICES=("prometheus" "node_exporter" "snmp-exporter" "grafana-server")
+SERVICES=("prometheus" "node_exporter" "snmp-exporter" "grafana-server" "alertmanager")
 
 
 for SERVICE in "${SERVICES[@]}"; do

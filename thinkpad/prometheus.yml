@@ -1,0 +1,6 @@
+scrape_configs:
+  - job_name: "thinkpad"
+    scrape_interval: 2s       # supaya lebih realtime
+    scrape_timeout: 1s
+    static_configs:
+      - targets: ["localhost:5010"]
